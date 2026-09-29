@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  width: 100vw;
+  background-color: rgb(2, 2, 44);
+  overflow: hidden;
+  font-family: "Inter";
+}
+main{
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dice-button-container{
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  grid-template-columns: repeat(5,1fr);
+  gap:20px;
+  padding: 20px;
+  width: 80%;
+}
+.dice-buttons{
+  padding: 20px;
+  border-radius: 15px;
+  outline: none;
+  font-family: "Inter";
+  background-color: rgb(244, 232, 210);
+  box-shadow: (1px 2px 6px rgba(0,0,0,0.5));
+  cursor: pointer;
+  font-size: 1.2em;
+  max-width: 70px;
+  margin-bottom: 10px;
+  border: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+.dice-buttons:hover{
+  background-color: wheat;
+}
+.generate-button{
+  border: none;
+  background-color: rgb(3, 3, 148);
+  font-family: "Inter";
+  font-size: 1.4em;
+  border-radius: 15px;
+  padding: 20px 55px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  letter-spacing: 3px;
+}
+.generate-button:hover{
+  background-color: rgb(0, 0, 130);
+  transform: translateY(-10px);
+}
+.generate-button:active{
+  transform: translateY(10px);
+}
+
